@@ -40,7 +40,7 @@
 		margin: 12px 0px;
 	}
 	.lbox-details::before{
-		background: rgba(0,0,0,0.9);
+		background: #890025
 	}
 	.countdown{
 		height: 188px;
@@ -62,7 +62,7 @@
 		padding: 5px 15px;
 	}
 	.lbox-details h1{
-		font-size: 24px;
+		font-size: 40px;
 	}
 	.lbox-details h2{
 		font-size: 18px;
@@ -77,7 +77,7 @@
 		font-size: 38px;
 	}
 	.about-main-info h2{
-		font-size: 24px;
+		font-size: 35px;
 	}
 	.about-img{
 		margin-bottom: 30px;
@@ -119,7 +119,7 @@
 		margin: 12px 0px;
 	}
 	.lbox-details::before{
-		background: rgba(0,0,0,0.9);
+		background: #890025
 	}
 	.countdown{
 		height: 188px;
@@ -134,5 +134,11 @@
 	}
 	.timeLine .row .item{
 		margin-bottom: 30px;
+	}
+
+	.single-team-member:hover, .single-team-member:active,  .family-info{
+		bottom: 0;
+		opacity: 1;
+		visibility: visible;
 	}
 }

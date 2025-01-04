@@ -64,7 +64,7 @@ h2 {
 }
 
 h3 {
-    font-size: 18px
+    /* font-size: 18px */
 }
 
 h4 {
@@ -781,7 +781,7 @@ button:focus{
 
 .family-info h4{
 	font-family: 'Engagement', cursive;
-	font-size: 24px;
+	font-size: 35px;
 	color: #ffffff;
 }
 .family-info p{
@@ -1066,6 +1066,11 @@ select.form-control:not([size]):not([multiple]){
 .footer-box .footer-company-name a:hover{
 	color: #63c7bd;
 }
+/* .family-info{
+	bottom: 0;
+	opacity: 1;
+	visibility: visible;
+} */
 
 
 
