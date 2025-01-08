@@ -8,7 +8,7 @@ $("#contactForm").validator().on("submit", function (event) {
         event.preventDefault();
         let nombre = document.querySelector('#name').value;
 		 let numeroInvi = document.querySelector('#guest').value;
-        window.open("https://wa.me/525514521662?text= Hola mi nombre es: "+nombre+ ", Confirmo mi asistencia a los 15 años de Layla, el número de personas que asistiremos seran:" + numeroInvi, '_blank');
+        window.open("https://wa.me/525514521662?text= Hola soy: "+nombre+ ", Confirmo mi asistencia a los 15 años de Layla, el número de personas que asistiremos serán:" + numeroInvi, '_blank');
 
         // submitForm();
     }
