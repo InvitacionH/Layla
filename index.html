@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en"><!-- Basic -->
+<script>
+
+	document.addEventListener('click', function () {
+		document.getElementById('musica').play()
+	}, {
+		once: true
+	});
+
+
+</script>
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -8,7 +18,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
  
      <!-- Site Metas -->
-    <title>Mis 15 años</title>  
+    <title>Mis XV años</title>  
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -35,11 +45,13 @@
 
 </head>
 <body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
-
+	<audio id="musica" loop>
+		<source src="Audio/A Thousand Years for violin and piano.mp3">
+	</audio>
 	<!-- LOADER -->
     <div id="preloader">
 		<div class="preloader pulse">
-			<h3>Layla Iriel Cerrillo Vazquez</h3>
+			<h3>Layla Iriel Cerrillo Vázquez</h3>
 		</div>
     </div><!-- end loader -->
     <!-- END LOADER -->
@@ -49,7 +61,7 @@
 		<nav class="navbar header-nav navbar-expand-lg">
             <div class="container">
 				
-				<h3 style="margin-left: 50px; color: brown; font-family: 'Engagement', cursive;">Mis 15 años - <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h3>
+				<h3 style="margin-left: 50px; color: brown; font-family: 'Engagement', cursive;">Mis XV años - <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h3>
 				<!-- <a class="navbar-brand" href="index.html"><img style="max-width: 240px;max-height: 50px;" src="images/logo.gif" alt="image"></a> -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
 					<span></span>
@@ -80,8 +92,8 @@
 			<li><img src="images/slider3.jpg" alt=""></li>
 		</ul>
 		<div class="lbox-details">
-			<h1>Mis 15 Años</h1>
-			<h1>Layla Iriel Cerrillo Vazquez</h1>
+			<h1>Mis XV Años</h1>
+			<h1>Layla Iriel Cerrillo Vázquez</h1>
 			<div class="countdown main-time clearfix">
 				<div id="timer">
 					<h3> 26 Abril 2025</h3>
@@ -122,7 +134,7 @@
 							<div class="col-lg-8 col-md-6 col-sm-12">
 								<h2> <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h2>
 								<p>Soy muy alegre, me gusta la Gimnasia, viajar y estudiar mucho. </p>
-								<p>Doy gracias a Dios por esto 15 años de vida, por todas las bendiciones que tengo junto a mi falmilia, estaré muy agradecida de que puedas acompañarme en este día tan especial.</p>
+								<p>Doy gracias a Dios por esto XV años de vida, por todas las bendiciones que tengo junto a mi falmilia, estaré muy agradecida de que puedas acompañarme en este día tan especial.</p>
 							</div>
 						</div>
 						
@@ -154,26 +166,44 @@
 							<div class="caption">
 								<div class="star center-block">
 									<span class="h3">01</span>
-									<span>March </span>
-									<span>2017</span>
+									<span>Dic </span>
+									<span>2012</span>
 								</div>
 								<div class="image">
 									<img src="images/time-01.jpg" alt="" />
 									<div class="title">
-										<h2>First Meet <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+										<h2>Mi Bautizo <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
-								<div class="textContent">
+								<!-- <div class="textContent">
 									<p class="lead">We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</p>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item" >
+							<div class="caption">
+								<div class="star center-block">
+									<span class="h3">24</span>
+									<span>Dic </span>
+									<span>2013</span>
 								</div>
+								<div class="image">
+									<img src="images/time-01-1.jpg" alt="" />
+									<div class="title">
+										<h2>Mis primeros pasos <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<!-- <div class="textContent">
+									<p class="lead">We met at the wedding of our close friends and immediately found a common language, so a year later our first date happened.</p>
+								</div> -->
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
 							<div class="caption">
 								<div class="star center-block">
-									<span class="h3">22</span>
+									<span class="h3">18</span>
 									<span>Ago</span>
-									<span>2016</span>
+									<span>2014</span>
 								</div>
 								<div class="image">
 									<img src="images/time-02.jpg" alt="" />
@@ -189,14 +219,14 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
 							<div class="caption">
 								<div class="star center-block">
-									<span class="h3">02</span>
-									<span>Oct</span>
-									<span>2017</span>
+									<span class="h3">21</span>
+									<span>Sep</span>
+									<span>2015</span>
 								</div>
 								<div class="image">
 									<img src="images/time-03.jpg" alt="" />
 									<div class="title">
-										<h2>Nadando <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+										<h2>Aprendiendo a nadar <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
 								</div>
 								<div class="textContent">
@@ -225,12 +255,104 @@
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
 							<div class="caption">
 								<div class="star center-block">
+									<span class="h3">21</span>
+									<span>Sep</span>
+									<span>2019</span>
+								</div>
+								<div class="image">
+									<img src="images/time-05.jpg" alt="" />
+									<div class="title">
+										<h2>Torneo <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<!-- <div class="textContent">
+									<p class="lead">Día en el que cumplí mi primera comunión.</p>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+							<div class="caption">
+								<div class="star center-block">
+									<span class="h3">15</span>
+									<span>Jul</span>
+									<span>2020</span>
+								</div>
+								<div class="image">
+									<img src="images/time-06.jpg" alt="" />
+									<div class="title">
+										<h2>Mi Graduación <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<!-- <div class="textContent">
+									<p class="lead">Día en el que cumplí mi primera comunión.</p>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+							<div class="caption">
+								<div class="star center-block">
+									<span class="h3">24</span>
+									<span>Agosto</span>
+									<span>2022</span>
+								</div>
+								<div class="image">
+									<img src="images/time-07.jpg" alt="" />
+									<div class="title">
+										<h2>Viaje a Perú <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<!-- <div class="textContent">
+									<p class="lead">Día en el que cumplí mi primera comunión.</p>
+								</div> -->
+							</div>
+						</div>
+											
+						
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+							<div class="caption">
+								<div class="star center-block">
+									<span class="h3">27</span>
+									<span>Ago</span>
+									<span>2024</span>
+								</div>
+								<div class="image">
+									<img src="images/time-08.jpg" alt="" />
+									<div class="title">
+										<h2>Viaje a Europa <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<!-- <div class="textContent">
+									<p class="lead">Día en el que cumplí mi primera comunión.</p>
+								</div> -->
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+							<div class="caption">
+								<div class="star center-block">
+									<span class="h3">14</span>
+									<span>Nov</span>
+									<span>2024</span>
+								</div>
+								<div class="image">
+									<img src="images/time-09.jpg" alt="" />
+									<div class="title">
+										<h2>Panamericanos <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
+									</div>
+								</div>
+								<div class="textContent">
+									<p class="lead">Nuestra navidad en Familia.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 item">
+							<div class="caption">
+								<div class="star center-block">
 									<span class="h3">24</span>
 									<span>Dic</span>
 									<span>2024</span>
 								</div>
 								<div class="image">
-									<img src="images/time-05.jpg" alt="" />
+									<img src="images/time-10.jpg" alt="" />
 									<div class="title">
 										<h2>Navidad <i class="fa fa-angle-right" aria-hidden="true"></i></h2>
 									</div>
@@ -266,8 +388,9 @@
 							<img class="img-fluid" src="images/family-01.jpg" alt="" />
 						</div>
 						<div class="family-info">
-							<h4>Mamá de Layla</h4>
-							<p>Katia Vazquez</p>
+							<h4>Padres de Layla</h4>
+							<p> Katia Vázquez Sánchez y</p>
+							<p>Fernando César Mendivil Moreno</p>
 						</div>
 					</div>
 				</div>
@@ -278,8 +401,8 @@
 						</div>
 						<div class="family-info">
 							<h4>Abuelitos de Layla</h4>
-							<p>Estela Sanchez y</p>
-							<p>Julio Vazquez Q.E.P.D.</p>
+							<p>Estela Sánchez y</p>
+							<p>Julio Vázquez Q.E.P.D.</p>
 
 
 						</div>
@@ -292,7 +415,7 @@
 						</div>
 						<div class="family-info">
 							<h4>Padrinos de Layla </h4>
-							<p>Arcelia Sanchez y</p>
+							<p>Arcelia Sánchez y</p>
 							<p>José González</p>
 
 						</div>
@@ -318,18 +441,6 @@
 			</div>
 			<div class="row">
 				<ul class="popup-gallery clearfix">
-					<li>
-						<a href="images/gallery-01.jpg">
-							<img class="img-fluid" src="images/gallery-01.jpg" alt="single image">
-							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-						</a>
-					</li>
-					<li>
-						<a href="images/gallery-02.jpg">
-							<img class="img-fluid" src="images/gallery-02.jpg" alt="single image">
-							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-						</a>
-					</li>
 					<li>
 						<a href="images/gallery-03.jpg">
 							<img class="img-fluid" src="images/gallery-03.jpg" alt="single image">
@@ -375,6 +486,126 @@
 					<li>
 						<a href="images/gallery-10.jpg">
 							<img class="img-fluid" src="images/gallery-10.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-11.jpg">
+							<img class="img-fluid" src="images/gallery-11.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-12.jpg">
+							<img class="img-fluid" src="images/gallery-12.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-13.jpg">
+							<img class="img-fluid" src="images/gallery-13.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-14.jpg">
+							<img class="img-fluid" src="images/gallery-14.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-15.jpg">
+							<img class="img-fluid" src="images/gallery-15.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-16.jpg">
+							<img class="img-fluid" src="images/gallery-16.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-17.jpg">
+							<img class="img-fluid" src="images/gallery-17.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-18.jpg">
+							<img class="img-fluid" src="images/gallery-18.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-19.jpg">
+							<img class="img-fluid" src="images/gallery-19.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-20.jpg">
+							<img class="img-fluid" src="images/gallery-20.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-21.jpg">
+							<img class="img-fluid" src="images/gallery-21.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-22.jpg">
+							<img class="img-fluid" src="images/gallery-22.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-23.jpg">
+							<img class="img-fluid" src="images/gallery-23.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-24.jpg">
+							<img class="img-fluid" src="images/gallery-24.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-25.jpg">
+							<img class="img-fluid" src="images/gallery-25.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-26.jpg">
+							<img class="img-fluid" src="images/gallery-26.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-27.jpg">
+							<img class="img-fluid" src="images/gallery-27.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-28.jpg">
+							<img class="img-fluid" src="images/gallery-28.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-29.jpg">
+							<img class="img-fluid" src="images/gallery-29.jpg" alt="single image">
+							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="images/gallery-30.jpg">
+							<img class="img-fluid" src="images/gallery-30.jpg" alt="single image">
 							<span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
 						</a>
 					</li>
@@ -474,7 +705,7 @@
 						<div class="event-img">
 							<img class="img-fluid" src="images/event-img-03.jpg" alt="" />
 						</div>
-						<h2>Celebración - 3:30 pm</h2>
+						<h2>Celebración - 3:00 pm</h2>
 						<p>La fiesta se llevará acabo en Calle Petronilo Villaseca #25, Acolman Centro, Estado de México</p>
 						<a href="https://maps.app.goo.gl/tGJDPRjtLRzFbwhy5" target="_blank">Ubicación<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 					</div>
@@ -567,6 +798,38 @@
 		</div>
 	</footer>
 	<!-- End Footer -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content text-center">
+				<div class="modal-header text-center">
+					<h3 style="color: brown; font-family: 'Engagement', cursive;">GRACIAS</h3>
+
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+							<!-- <h3 style="margin-left: 50px; color: brown; font-family: 'Engagement', cursive;">Mis XV años - <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i class="fa fa-heart-o" aria-hidden="true"></i></h3> -->
+
+				</div>
+				<div class="modal-body text-center">
+
+					<h3 style="color:darkgrey; font-family: 'Engagement', cursive; font-size:50px ;">Por formar parte de este día tan
+						especial</h3>
+					<p>
+						<i style="display: block; font-size: 40px; color: brown;"
+							class="fa fa-heart fa-beat-fade animate-box"></i>
+					</p>
+					<h3 style="color:grey; font-weight: bold; font-family: 'Engagement', cursive; font-size:45px">Atte. Fam. Vázquez Sánchez
+					</h3>
+
+
+				</div>
+				<div style="text-align: center;" class="modal-footer">
+					<button style="background-color: brown;" type="button" class="btn btn-primary" data-dismiss="modal">Continuar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 
 	<!-- ALL JS FILES -->
 	<script src="js/jquery.min.js"></script>
@@ -583,14 +846,15 @@
     <script src="js/contact-form-script.js"></script>
     <script src="js/custom.js"></script>
 
-	<!-- <script>
-		function doSearch() {
-		 let nombre = document.querySelector('#name').value;
-		 let numeroInvi = document.querySelector('#guest').value;
+	<script>
+		$('#myModal').modal('show');
+		// function doSearch() {
+		//  let nombre = document.querySelector('#name').value;
+		//  let numeroInvi = document.querySelector('#guest').value;
 
 		 
-		 window.open("https://wa.me/525516960022?text= Hola mi nombre es: "+nombre+ ", Confirmo mi asistencia a los 15 años de Layla, el número de personas que asistiremos seran:" + numeroInvi, '_blank');
-		}
-	   </script> -->
+		//  window.open("https://wa.me/525516960022?text= Hola mi nombre es: "+nombre+ ", Confirmo mi asistencia a los 15 años de Layla, el número de personas que asistiremos seran:" + numeroInvi, '_blank');
+		// }
+	   </script>
 </body>
 </html>
