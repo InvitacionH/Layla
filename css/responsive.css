@@ -30,18 +30,18 @@
 	.top-header{
 		position: relative;
 	}
-	.lbox-details{
+	/* .lbox-details{
 		display: block;
 		position: relative;
 		width: 100%;
-	}
+	} */
 	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
 		position: inherit;
 		margin: 12px 0px;
 	}
-	.lbox-details::before{
+	/* .lbox-details::before{
 		background: #890025
-	}
+	} */
 	.countdown{
 		height: 188px;
 		border-radius: 0px;
@@ -109,18 +109,18 @@
 	.top-header{
 		position: relative;
 	}
-	.lbox-details{
+	/* .lbox-details{
 		display: block;
 		position: relative;
 		width: 100%;
-	}
+	} */
 	.countdown #timer div#days, .countdown #timer div#hours, .countdown #timer div#minutes, .countdown #timer div#seconds{
 		position: inherit;
 		margin: 12px 0px;
 	}
-	.lbox-details::before{
+	/* .lbox-details::before{
 		background: #890025
-	}
+	} */
 	.countdown{
 		height: 188px;
 		border-radius: 0px;
