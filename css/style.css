@@ -805,7 +805,7 @@ button:focus{
 .gallery-box ul{}
 .gallery-box ul li{
 	position: relative;
-	width: 25%;
+	width: 100%;;
 	margin: 0;
 	padding: 0px 15px;
 	float: left;
@@ -817,13 +817,19 @@ button:focus{
 	position: relative;
 	display: inline-block;
 	border: 4px solid #ffffff;
+	width: 50%;
+	
+	
 }
+/* .gallery-box ul li a img{
+	width: 50%;
+} */
 .gallery-box ul li a::before{
 	content: "";
 	position: absolute;
 	background: rgba(82, 135, 128, 0.9);
 	width: 100%;
-	height: 100%;
+	height: 100%; 
 	left: 0px;
 	top: 100%;
 	opacity: 0;
