@@ -61,17 +61,17 @@
 	<!-- Start header -->
 	<header class="top-header">
 		<nav class="navbar header-nav navbar-expand-lg">
-			<div  class="col-md-12">
+			<div class="col-md-12">
 
-				<h3 style="margin-top:15px; ; text-align: center; color: brown; font-family: 'Engagement', cursive;">Mis XV años - <i
-						class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i class="fa fa-heart-o"
-						aria-hidden="true"></i></h3>
+				<h3 style="margin-top:15px; ; text-align: center; color: brown; font-family: 'Engagement', cursive;">Mis
+					XV años - <i class="fa fa-heart-o" aria-hidden="true"></i> <span>Layla</span> <i
+						class="fa fa-heart-o" aria-hidden="true"></i></h3>
 				<!-- <a class="navbar-brand" href="index.html"><img style="max-width: 240px;max-height: 50px;" src="images/logo.gif" alt="image"></a> -->
 
 			</div>
 		</nav>
 	</header>
-	<!-- End header -->	<!-- Start Banner -->
+	<!-- End header --> <!-- Start Banner -->
 	<!-- Start Contact -->
 	<div id="contact" class="contact-box" style="padding-top: 20px !important; padding-bottom: 10px !important;">
 		<div class="container">
@@ -79,7 +79,8 @@
 				<div class="col-lg-12">
 					<div class="title-box">
 						<h2>Capsula del tiempo</h2>
-						<p>Comparte conmigo tus recuerdos de este día tan especial. Sube una foto para asi poder viajar en el tiempo cada vez que queramos. </p>
+						<p>Comparte conmigo tus recuerdos de este día tan especial. Sube una foto para asi poder viajar
+							en el tiempo cada vez que queramos. </p>
 					</div>
 				</div>
 			</div>
@@ -100,9 +101,8 @@
 							<div class="col-md-12">
 								<div class="submit-button text-center">
 									<div class="submit-button text-center">
-										<button class="btn btn-common" id="submit" type="submit"
-											>Click para guardar foto <i
-												class="fa fa-instagram"></i></button>
+										<button class="btn btn-common" id="submit" type="submit">Click para guardar foto
+											<i class="fa fa-instagram"></i></button>
 									</div>
 
 								</div>
@@ -112,10 +112,10 @@
 					</form>
 				</div>
 			</div>
-			<div id="loader" class="col-md-12" style="text-align: center; display: none;">
+			<div id="loader" class="col-md-12" style="text-align: center;">
 				<br>
 				<img src="images/Loading_2.gif">
-				<p>Espere por favor estamos subiendo su imagen. </p>
+				<p>Espere por favor... </p>
 			</div>
 		</div>
 	</div>
@@ -135,7 +135,7 @@
 			</div>
 			<div class="row">
 				<ul id="listImageDown" class="popup-gallery clearfix" style="text-align: center;">
-				
+
 
 			</div>
 		</div>
@@ -170,28 +170,30 @@
 	<script src="js/custom.js"></script>
 
 	<script>
-
-		$(document).ready(function () {
-
-
+		$(window).on('load', function () {
 			const url = "https://script.google.com/macros/s/AKfycbzbBdAhYT-ttqNpGSQ8LqJSx8m4FB6PaIkNsUf0U7zJp8OogyaX5pQ1Z1_n4ne_FvbL-w/exec";  // <--- Please set the URL of Web Apps.
 
 			fetch(`${url}`)
 				.then(response => response.json())
 				.then(data => {
 					console.log(data);
-					var daString="";
+					var daString = "";
 					data.forEach(element => {
 						var a = element.split('/');
 						console.log(a);
-						daString = daString + '<li><a href="https://lh3.googleusercontent.com/d/'+a[5].toString()+'"><img class="img-fluid"	src="https://lh3.googleusercontent.com/d/'+a[5].toString()+'" alt="single image"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a></li>';
+						daString = daString + '<li><a href="https://lh3.googleusercontent.com/d/' + a[5].toString() + '"><img class="img-fluid"	src="https://lh3.googleusercontent.com/d/' + a[5].toString() + '" alt="single image"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a></li>';
 						var elementoPadre = document.getElementById("listImageDown");
-						elementoPadre.innerHTML=(daString);
+						elementoPadre.innerHTML = (daString);
 					});
-
+					document.getElementById("loader").style.display = "none";
 
 				})  // <--- You can retrieve the returned value here.
 				.catch(err => console.log(err));
+		});
+		$(document).ready(function () {
+
+
+
 		});
 
 
