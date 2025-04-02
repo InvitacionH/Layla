@@ -179,7 +179,7 @@
 				.then(response => response.json())
 				.then(data => {
 					console.log(data);
-					var daString = "";
+					var daString = '<li><a href="images/brincando.jpg"><img class="img-fluid" src="images/brincando.jpg" alt="single image"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a></li><li><a href="images/lentes.jpg"><img class="img-fluid" src="images/lentes.jpg" alt="single image"><span class="overlay"><i class="fa fa-heart-o" aria-hidden="true"></i></span></a></li>';
 					data.forEach(element => {
 						var a = element.split('/');
 						console.log(a);
